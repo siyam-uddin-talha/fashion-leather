@@ -46,16 +46,16 @@ app.use('/api/payment/', CheckCredentials, paymentAndOrderRoute) // payment and 
 app.use('/api/admin/', AdminMiddleWare, AdminRoute) // it can access only admins
 
 // front-end 
-app.use("/", express.static(path.join(__dirname, "./FrontEnd/build")))
+app.use(express.static(path.join(__dirname, "./FrontEnd/build")))
+// admin 
+app.use("/adim/panal", express.static(path.join(__dirname, "./Dashbord/build")))
+
 // front-end index file
-app.get("/*", (req, res) => {
+app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./FrontEnd/build/index.html"))
 })
-
-// admin 
-app.use("/adim/panal/", express.static(path.join(__dirname, "./Dashbord/build")))
 // admin index file
-app.get("/adim/panal/*", (req, res) => {
+app.get("adim/panal/*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./Dashbord/build/index.html"))
 })
 
