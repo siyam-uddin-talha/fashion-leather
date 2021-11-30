@@ -2,6 +2,7 @@
   "name": "fashion-leather",
   "version": "1.0.1",
   "private": true,
+  "homepage": "https://fashion-leather.herokuapp.com/",
   "dependencies": {
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",

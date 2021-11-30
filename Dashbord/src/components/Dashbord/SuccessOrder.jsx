@@ -22,7 +22,7 @@ export default function Deposits() {
     const GetInfo = React.useCallback(async () => {
         try {
             const { data } = await UseGetData('/api/admin/successful-orders')
-            console.log(data)
+
             if (data.success) {
                 setallSuccessFulOrders(data.orders)
             } else {
@@ -30,7 +30,7 @@ export default function Deposits() {
             }
             setloading(false)
         } catch (error) {
-            console.log(error)
+            setloading(false)
         }
     }, []
     )

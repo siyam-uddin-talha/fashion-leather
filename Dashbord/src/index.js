@@ -13,7 +13,7 @@ const store = createStore(Reducers)
 
 ReactDOM.render(
   <React.Fragment>
-    <Router>
+    <Router basename='/admin/dashbord' >
       <Provider store={store} >
         <App />
       </Provider>

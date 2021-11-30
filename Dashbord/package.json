@@ -2,6 +2,7 @@
   "name": "fashion-leather-dashbord",
   "version": "1.0.1",
   "private": true,
+  "homepage": "https://fashion-leather.herokuapp.com/admin/dashbord",
   "dependencies": {
     "@emotion/react": "^11.6.0",
     "@emotion/styled": "^11.6.0",
