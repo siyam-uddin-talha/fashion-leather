@@ -47,8 +47,8 @@ app.use('/api/admin/', AdminMiddleWare, AdminRoute) // it can access only admins
 
 
 
-const dashBordRoot = path.join(__dirname, 'Dashbord', 'build') //Dashbord path
-const clientRoot = path.join(__dirname, 'FrontEnd', 'build') //client path
+const dashBordRoot = path.join(__dirname, './Dashbord', 'build') //Dashbord path
+const clientRoot = path.join(__dirname, './FrontEnd', 'build') //client path
 
 
 // front-end 
