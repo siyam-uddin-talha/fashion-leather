@@ -45,18 +45,24 @@ app.use('/api/payment/', CheckCredentials, paymentAndOrderRoute) // payment and 
 
 app.use('/api/admin/', AdminMiddleWare, AdminRoute) // it can access only admins
 
+
+
+const dashBordRoot = path.join(__dirname, 'Dashbord', 'build') //Dashbord path
+const clientRoot = path.join(__dirname, 'FrontEnd', 'build') //client path
+
+
 // front-end 
-app.use(express.static(path.join(__dirname, "./FrontEnd/build")))
+app.use(express.static(clientRoot))
 // admin 
-app.use("/adim/panal", express.static(path.join(__dirname, "./Dashbord/build")))
+app.use("/admin/dashbord", express.static(dashBordRoot))
 
 // front-end index file
 app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./FrontEnd/build/index.html"))
+    res.sendFile("index.html", { clientRoot })
 })
 // admin index file
-app.get("adim/panal/*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./Dashbord/build/index.html"))
+app.get("admin/dashbord/*", (req, res) => {
+    res.sendFile("index.html", { dashBordRoot })
 })
 
 

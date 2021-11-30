@@ -8,8 +8,6 @@ const MobileBar = ({ open, setClose }) => {
     const NavLinks = [
         { link: '/', title: 'Home', delay: 0.22 },
         { link: '/all-products', title: 'All Products', delay: 0.57 },
-        { link: '/my/favorites', title: 'My Favorite', delay: 0.79 },
-        { link: '/contact-us', title: 'Contact us', delay: 0.9 },
     ]
 
     return (
