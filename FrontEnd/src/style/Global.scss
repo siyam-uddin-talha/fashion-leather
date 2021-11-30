@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+@media (min-width: 998px) {
+  .xl-p-4 {
+    padding: 4rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .md-p-2 {
+    padding: 4rem !important;
+  }
+}
+
+.p-0 {
+  padding: 0rem;
+}
+
+.p-r {
+  position: relative;
+}
+
+.img_container {
+  img {
+    width: 100%;
+  }
+}
+
+//   position: absolute;
+.position-abs {
+  position: absolute;
+}
+
+//   align-items: center;
+.a-i-c {
+  align-items: center;
+}
+.j-c-c {
+  justify-content: center;
+}
+
+// flex-wrap: wrap-reverse;
+.f-w-w-r {
+  flex-wrap: wrap-reverse;
+}
+
+//
+.text-upper {
+  text-transform: uppercase;
+}
+
+// background: whitesmoke;
+.bg-w-s {
+  background: whitesmoke;
+}
+
+// background: white;
+.bg-w {
+  background: white;
+}
+
+// padding-bottom: 4rem !important;
+.pb-6 {
+  padding-bottom: 4rem !important;
+}
+// for every section
+.sec-pad {
+  padding: 4rem 0;
+}
+
+.bg-11 {
+  background-color: #ecffec !important;
+}
+
+.bg-10 {
+  background-color: #fffceb !important;
+}
+
+.t-d-n {
+  text-decoration: none;
+}
+
+.c-gray {
+  color: #606688;
+}
+.gray {
+  color: gray;
+}
+
+.b-r-1 {
+  border-radius: 1rem;
+}
+
+.b-t-l-r-1 {
+  border-top-left-radius: 1rem;
+}
+.b-t-r-r-1 {
+  border-top-right-radius: 1rem;
+}
+
+.f-w-w {
+  flex-wrap: wrap;
+}
+
+.f-d-c {
+  flex-direction: column;
+}
+
+.j-c-s-b {
+  justify-content: space-between;
+}
+
+.c-white {
+  color: white;
+}
+.c-black {
+  color: #313131;
+}
+.a-hover {
+  &:hover {
+    color: #2c2c2c;
+  }
+}
+@media (max-width: 768px) {
+  .md-j-c-c {
+    justify-content: center !important;
+  }
+}
+
+button {
+  &:disabled {
+    cursor: not-allowed !important;
+  }
+}
+.Mui-disabled {
+  cursor: not-allowed !important;
+}
+
+.j-c-f-e {
+  justify-content: flex-end;
+}
+
+.hover-underline {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.weight-500 {
+  font-weight: 500;
+}
+.weight-600 {
+  font-weight: 600;
+}
+
+.text-capitlize {
+  text-transform: capitalize;
+}
+
+.f-f-san-pro {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.j-c-f-s {
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .md-j-c-c {
+    justify-content: center !important;
+  }
+}

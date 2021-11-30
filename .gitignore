@@ -1,0 +1,38 @@
+
+# dependencies
+
+/node_modules
+/Dashbord/node_modules
+/FrontEnd/node_modules
+/Dashbord/.pnp
+/Dashbord.pnp.js
+/FrontEnd/.pnp
+/FrontEnd.pnp.js
+
+# testing
+/FrontEnd/coverage
+/Dashbord/coverage
+
+# production
+/FrontEnd/build
+/Dashbord/build
+
+# misc
+.env
+/.env
+/FrontEnd/.DS_Store
+/Dashbord/.DS_Store
+/FrontEnd/.env.local
+/Dashbord/.env.local
+/FrontEnd/.env
+/Dashbord/.env
+/FrontEnd/.env.development.local
+/Dashbord/.env.test.local
+/FrontEnd/.env.test.local
+/FrontEnd/.env.production.local
+/Dashbord/.env.production.local
+/Dashbord/.env.development.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
