@@ -3,7 +3,7 @@ author:'Arnob Islam'
 created date:'18-10-21'
 description:''
 */
-const stripe = require('stripe')(`sk_test_51Js97hDJVgQGFCMTByv6spnAc7o0oiJ70KW5vI7tND5doC2wHZqaSLvdDJgwNqCszO8gdYgTVIoGKj1myvWNxnzX00gvTSpV8U`);
+const stripe = require('stripe')(`key`);
 
 const ORDER = require('../../Models/Order');
 const NOTIFICATION = require('../../Models/Notifications');
