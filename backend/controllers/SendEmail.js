@@ -20,18 +20,18 @@ const SEND_EMAIL = async ({ email, subject, message, html }) => {
             secure: false,
             requireTLS: true,
             auth: {
-                user: 'fashion.leather.2020@gmail.com',
-                pass: 'fashionleather2020'
+                user: '****',
+                pass: '****'
             }
 
         });
 
         // send mail with defined transport object
         await transporter.sendMail({
-            from: 'fashion.leather.2020@gmail.com', // sender address
+            from: '******', // sender address
             to: email, // list of receivers
-            bcc: subject !== "password reset" ? 'mr.jocker909@gmail.com ' : "",
-            cc: subject !== "password reset" ? 'fashionleather93@gmail.com' : "",
+            bcc: subject !== "****",
+            cc: subject !== "****",
             subject: subject, // Subject line
             text: message, // plain text body
             html: `${html}`, // html body
